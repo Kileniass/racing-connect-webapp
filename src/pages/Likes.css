@@ -1,0 +1,84 @@
+.likes {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.likes__title {
+  font-size: 1.5rem;
+  color: var(--tg-theme-text-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.likes__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.likes__loading,
+.likes__empty,
+.likes__error {
+  text-align: center;
+  color: var(--tg-theme-hint-color);
+  padding: 40px 20px;
+}
+
+.likes__empty h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: var(--tg-theme-text-color);
+}
+
+.likes__error {
+  color: #ff3b30;
+  background-color: rgba(255, 59, 48, 0.1);
+  border-radius: 8px;
+}
+
+.match-card {
+  background-color: var(--tg-theme-bg-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.match-card__photo {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.match-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.match-card__info {
+  padding: 16px;
+}
+
+.match-card__name {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--tg-theme-text-color);
+}
+
+.match-card__car {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--tg-theme-text-color);
+}
+
+.match-card__description {
+  font-size: 0.875rem;
+  color: var(--tg-theme-hint-color);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+} 

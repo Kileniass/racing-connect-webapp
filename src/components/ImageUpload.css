@@ -1,0 +1,60 @@
+.image-upload {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.image-upload__preview {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed var(--tg-theme-hint-color);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tg-theme-bg-color);
+}
+
+.image-upload__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-upload__placeholder {
+  color: var(--tg-theme-hint-color);
+  text-align: center;
+  padding: 20px;
+}
+
+.image-upload__button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.image-upload__button:hover {
+  opacity: 0.9;
+}
+
+.image-upload__input {
+  display: none;
+}
+
+.image-upload__error {
+  color: #ff3b30;
+  font-size: 0.875rem;
+  text-align: center;
+} 
